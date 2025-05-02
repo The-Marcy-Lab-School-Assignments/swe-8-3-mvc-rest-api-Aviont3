@@ -1,5 +1,5 @@
-const express = require("express");
-const app = express();
+const getId = ((id = 0) => {
+  return () => ++id;
+})();
 
-const PORT = 8080;
-app.listen(PORT, () => console.log(`listening at http://localhost:${PORT}`));
+module.exports = getId;
