@@ -1,10 +1,10 @@
 # swe-8-3-mvc-rest-api
 
-Deployment Link: 
+Deployment Link: https://swe-8-3-mvc-rest-api-aviont3.onrender.com
 
 ## Overview
 
-The homework this week will be a little bit different! Rather than building something from scratch, you will be "remixing" code found in the `2-fellow-tracker-final-mvc/` directory of the repo below to build your own app! 
+The homework this week will be a little bit different! Rather than building something from scratch, you will be "remixing" code found in the `2-fellow-tracker-final-mvc/` directory of the repo below to build your own app!
 
 https://github.com/The-Marcy-Lab-School/8-1-0-express-rest-api-model
 
@@ -14,7 +14,7 @@ This repository contains a server application with controllers and a model for m
 
 ### Your Task
 
-You will be tasked with "remixing" the provided application and adjusting it for the domain area of your choice. For example, you may choose to implement a Playlist API that lets users manage a list of songs or a Library API that lets users manage a list of books. 
+You will be tasked with "remixing" the provided application and adjusting it for the domain area of your choice. For example, you may choose to implement a Playlist API that lets users manage a list of songs or a Library API that lets users manage a list of books.
 
 Regardless of your choice, the API should manage a **collection of objects**.
 
@@ -36,13 +36,13 @@ https://github.com/The-Marcy-Lab-School/8-1-0-express-rest-api-model
 
 Next, create a `server` directory for your server application and set up the dependencies and file structure:
 
-* Create a `package.json` file
-* Install dependencies:
-  * `express`
-  * `nodemon` (developer dependency)
-* Setup the file structure to match the example repository, updating the file names according to your chosen domain area:
+- Create a `package.json` file
+- Install dependencies:
+  - `express`
+  - `nodemon` (developer dependency)
+- Setup the file structure to match the example repository, updating the file names according to your chosen domain area:
 
-  ``` 
+  ```
   server/
   ├── index.js
   ├── controllers/
@@ -53,13 +53,14 @@ Next, create a `server` directory for your server application and set up the dep
       └── getId.js
   ```
 
-* Get building!
+- Get building!
 
 ## Technical Requirements
 
 Below, you will find the technical requirements for this assignment.
 
 There are a total of 20 total requirements:
+
 - 6 model requirements
 - 8 endpoint/controller requirements
 - 1 deployment requirement
@@ -79,16 +80,16 @@ There are a total of 20 total requirements:
 
 ### Endpoint / Controller Requirements
 
-* The server has endpoints including at least:
+- The server has endpoints including at least:
   - [ ] one `GET` method
   - [ ] one `POST` method
   - [ ] one `PATCH` method with a route parameter for `:id`
   - [ ] one `DELETE` method with a route parameter for `:id`
 
-- [ ] The server can parse JSON in incoming requests with `express.json()` middleware
-- [ ] All endpoints begin with `/api`
-- [ ] All endpoints use plural nouns (e.g. `/api/fellows`), NOT verbs (e.g. `/api/getFellows`)
-- [ ] Error codes are used appropriately (see below for error code information):
+* [ ] The server can parse JSON in incoming requests with `express.json()` middleware
+* [ ] All endpoints begin with `/api`
+* [ ] All endpoints use plural nouns (e.g. `/api/fellows`), NOT verbs (e.g. `/api/getFellows`)
+* [ ] Error codes are used appropriately (see below for error code information):
 
 ### Deployment Requirements
 
@@ -106,13 +107,13 @@ There are a total of 20 total requirements:
 
 The following error codes are commonly used by APIs
 
-* Success Responses
-  * `200` OK — Standard success (GET, PUT, DELETE).
-  * `201` Created — Resource was created (POST).
-  * `204` No Content — Successful but no response body (e.g. DELETE or empty PATCH).
-* Client Errors
-  * `400` Bad Request — Input is invalid (e.g. missing fields, bad JSON).
-  * `404` Not Found — Resource doesn’t exist (e.g. user ID not found).
-* Server Errors
-  * `500` Internal Server Error — Unexpected error on your backend.
-  * `503` Service Unavailable — Server is overloaded or down (e.g. maintenance or unavailable 3rd party API).
+- Success Responses
+  - `200` OK — Standard success (GET, PUT, DELETE).
+  - `201` Created — Resource was created (POST).
+  - `204` No Content — Successful but no response body (e.g. DELETE or empty PATCH).
+- Client Errors
+  - `400` Bad Request — Input is invalid (e.g. missing fields, bad JSON).
+  - `404` Not Found — Resource doesn’t exist (e.g. user ID not found).
+- Server Errors
+  - `500` Internal Server Error — Unexpected error on your backend.
+  - `503` Service Unavailable — Server is overloaded or down (e.g. maintenance or unavailable 3rd party API).
